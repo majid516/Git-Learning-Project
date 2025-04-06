@@ -54,7 +54,7 @@ class AuthScreen extends StatelessWidget {
                   debugPrint("Logging in with $email and $password");
 
                   if (email == "user@gmail.com" && password == "123456") {
-                    // TODO: Add navigation
+                    // TODO: Add navigation home
                   }
                 },
                 child: const Text('Login'),
