@@ -5,6 +5,13 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Center(child: Text('Home Screen')));
+    return Scaffold(
+      body: ListView.builder(
+        itemCount: 40,
+        itemBuilder: (context, index) {
+          return ListTile(title: Text('Item $index'));
+        },
+      ),
+    );
   }
 }
