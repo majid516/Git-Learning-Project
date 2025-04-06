@@ -56,7 +56,9 @@ class AuthScreen extends StatelessWidget {
                   debugPrint("Logging in with $email and $password");
 
                   if (email == "user@gmail.com" && password == "123456") {
-                    Navigator.of(context).pushReplacement(CupertinoPageRoute(builder: (ctx)=> ProfileScreen()));
+                    Navigator.of(context).pushReplacement(
+                      CupertinoPageRoute(builder: (ctx) => ProfileScreen()),
+                    );
                   }
                 },
                 child: const Text('Login'),
