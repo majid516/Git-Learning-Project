@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:git_learning_project/feature/profile/view/screen/profile_screen.dart';
 
 class AuthScreen extends StatelessWidget {
   const AuthScreen({super.key});
@@ -54,7 +56,7 @@ class AuthScreen extends StatelessWidget {
                   debugPrint("Logging in with $email and $password");
 
                   if (email == "user@gmail.com" && password == "123456") {
-                    // TODO: Add navigation
+                    Navigator.of(context).pushReplacement(CupertinoPageRoute(builder: (ctx)=> ProfileScreen()));
                   }
                 },
                 child: const Text('Login'),
